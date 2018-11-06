@@ -2,12 +2,12 @@
 
 FSP Network Gen2 Server Infrastructure - AGW
 
-![Docker Automated build](https://img.shields.io/docker/automated/fspnetwork/agw.svg?style=flat-square)
-![Docker Build Status](https://img.shields.io/docker/build/fspnetwork/agw.svg?style=flat-square)
-![GitHub](https://img.shields.io/github/license/fastsp/agw.svg?style=flat-square)
+[![Docker Automated build](https://img.shields.io/docker/automated/fspnetwork/agw.svg?style=flat-square)](https://hub.docker.com/r/fspnetwork/agw/)
+[![Docker Build Status](https://img.shields.io/docker/build/fspnetwork/agw.svg?style=flat-square)](https://hub.docker.com/r/fspnetwork/agw/)
+[![GitHub](https://img.shields.io/github/license/fspnet/agw.svg?style=flat-square)](https://github.com/FSPNet/AGW/blob/master/LICENSE)
 
 ![Kcptun](https://img.shields.io/badge/Kcptun-20181002-blue.svg?style=flat-square)
-![Shadowsocks-libev](https://img.shields.io/badge/ss--libev-3.2.0-blue.svg?style=flat-square)
+![Shadowsocks-libev](https://img.shields.io/badge/ss--libev-3.2.1-blue.svg?style=flat-square)
 
 A docker image for [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) server with [KCPTUN](https://github.com/xtaci/kcptun) support
 
@@ -27,6 +27,7 @@ A docker image for [shadowsocks-libev](https://github.com/shadowsocks/shadowsock
 | PASSWORD | 123456 |
 | SS_METHOD | chacha20-ietf-poly1305 |
 | SS_TIMEOUT | 60 |
+| DNS_ADDR | 8.8.8.8,8.8.4.4 |
+| PLUGIN | obfs-server |
+| PLUGIN_OPTS | obfs=tls |
 | KCP_PORT | 1024 |
-
-based [kcp-shadowsocks-docker](https://github.com/hangim/kcp-shadowsocks-docker)
