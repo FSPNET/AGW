@@ -2,7 +2,7 @@
 
 FROM fspnetwork/ss
 
-ENV KCP_VER 20181002
+ENV KCP_VER 20181114
 
 RUN \
     apk add --no-cache --virtual .build-deps curl \

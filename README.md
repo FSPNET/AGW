@@ -6,7 +6,7 @@ FSP Network Gen2 Server Infrastructure - AGW
 [![Docker Build Status](https://img.shields.io/docker/build/fspnetwork/agw.svg?style=flat-square)](https://hub.docker.com/r/fspnetwork/agw/)
 [![GitHub](https://img.shields.io/github/license/fspnet/agw.svg?style=flat-square)](https://github.com/FSPNet/AGW/blob/master/LICENSE)
 
-![Kcptun](https://img.shields.io/badge/Kcptun-20181002-blue.svg?style=flat-square)
+![Kcptun](https://img.shields.io/badge/Kcptun-20181114-blue.svg?style=flat-square)
 ![Shadowsocks-libev](https://img.shields.io/badge/ss--libev-3.2.1-blue.svg?style=flat-square)
 
 A docker image for [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) server with [KCPTUN](https://github.com/xtaci/kcptun) support
