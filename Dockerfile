@@ -2,11 +2,12 @@
 
 FROM fspnetwork/ss
 
-ENV KCP_VER 20181114
+ARG KCP_VER=20181114
+ARG KCP_URL=https://github.com/xtaci/kcptun/releases/download/v{$KCP_VER}/kcptun-linux-amd64-${KCP_VER}.tar.gz
 
 RUN \
     apk add --no-cache --virtual .build-deps curl \
-    && curl -fSL https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-amd64-$KCP_VER.tar.gz | tar xz -C /usr/local/bin server_linux_amd64 \
+    && curl -fSL ${KCP_URL} | tar xz -C /usr/local/bin server_linux_amd64 \
     && apk del .build-deps \
     && apk add --no-cache supervisor
 
