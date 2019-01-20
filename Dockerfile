@@ -1,8 +1,8 @@
 # Shadowsocks Server with KCPTUN support Dockerfile
 
-FROM fspnetwork/ss
+FROM fspnetwork/ss:1.0.5
 
-ARG KCP_VER=20181114
+ARG KCP_VER=20190109
 ARG KCP_URL=https://github.com/xtaci/kcptun/releases/download/v{$KCP_VER}/kcptun-linux-amd64-${KCP_VER}.tar.gz
 
 RUN \
